@@ -1,0 +1,24 @@
+# Ensure Jupyter notebook outputs are stripped before commit
+*.ipynb filter=strip-notebook-output
+
+# Preserve outputs for example notebooks
+#examples/*.ipynb -filter
+
+# Enforce LF line endings for text-based files
+*.txt text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.rst text eol=lf
+
+# Treat binary files appropriately
+*.png binary
+*.jpg binary
+*.gif binary
+*.pdf binary
+*.pickle binary
+
+# Documentation build artifacts
+#docs/_build/** binary
+
+# Ignore changes in executable bit
+#*.sh -text
